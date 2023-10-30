@@ -1,0 +1,780 @@
+/*importing google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Fahkwang&family=Farro&family=Lora&family=Montserrat&family=Open+Sans&display=swap');
+
+/*setting the wesite's margin to 0*/
+*{
+    margin: 0vh;
+}
+
+/*designing the marginbox at the tope of the screen*/
+#marginbox{
+    position: fixed;
+    background-color: #8265A7;
+    height: 2.5vh;
+    width: 100%;
+}
+
+/*designing the navigation bar*/
+#navbar{
+    background-color: #D83F87;
+    height: 6.5vh;
+    width: 100%;
+    padding: 1vh;
+    position: fixed;
+    top: 2.5vh;
+    left: 0%;
+}
+
+/*designing the image used for logo*/
+#brandlogo img{
+    width: 6vh;
+    height: 6vh;
+    margin-left: 2vh;
+}
+
+/*designing the brandname used for logo*/
+#brandname{
+    font-family: 'Fahkwang', sans-serif;
+    color: white;
+    text-transform: uppercase;
+    position: absolute;
+    left: 10vh;
+    top: 2.25vh;
+    font-size: 1.25vw;
+}
+
+/*designing the pagelinks as a whole to set its position on the webpage*/
+#linksgroup{
+    position: absolute;
+    left: 30vw;
+    top: 2.5vh;
+    width: 69vw;
+    height: 6vh;
+}
+
+/*setting the font for the pagelinks*/
+.links{
+    display: inline;
+    font-family: 'Farro', sans-serif;
+    transition: .4s;
+    opacity: 0.8;
+}
+
+/*designing the links when the mouse hovers on it*/
+.links:hover{
+    transition: .4s;
+    opacity: 1;
+}
+
+/*removing the underline and setting the general font-size*/
+.links a{
+    text-decoration: none;
+    font-size: 1vw;
+}
+
+/*desiging the links except the contribute at the center of the navbar*/
+#home, #background, #references, #data, #aboutme{
+    background-color: #D83F87;
+    text-transform: uppercase;
+    padding: 0.75vw;
+}
+
+/*setting the color of the text of the pagelinks*/
+#home a, #background a, #references a, #data a, #aboutme a{
+    color: white;
+}
+
+/*designing the button for the link for contribute*/
+#contribute{
+    position: absolute;
+    left: 57vw;
+    bottom: 1.25vh;
+    border: 0.25vh solid #A4B3B6;
+    border-radius: 50vh;
+    background-color: #A4B3B6;
+    padding: 0.75vw;
+}
+
+/*designing the button for contribute when the mouse hovers on it*/
+#contribute a{
+    color: black;
+    text-transform: uppercase;
+}
+
+/*using the pseudo class visited so that the user will know when they have already activated and clicked the link for their contribution*/
+#contributereaction:visited{
+    color: #8265A7;
+}
+
+/*designing the footer (its position and color)*/
+#footer{
+    background-color: #D83F87;
+    padding: 1vh;
+    position: fixed;
+    bottom: 0%;
+    right: 0%;
+    height: 5vh;
+    width: 100%;
+}
+
+/*positioning the socials at the lower-right corner of the page*/
+.socials img{
+    width: 4vh;
+    margin-right: 1vh;
+}
+
+/*setting the socials' opacity to light so that the affect of the transition would be more noticeable*/
+.socials{
+    opacity: .7;
+    transition: .4s;
+}
+
+/*setting the change on the socials' opacity when the mouse hovers over it*/
+.socials:hover {
+    transition: .4s;
+    opacity: 1;
+}
+
+/*designing the link for my github profile*/
+#github{
+    position: fixed;
+    bottom: 1.25vh;
+    right: 2vh;
+
+}
+
+/*designing the link for my instagram profile*/
+#ig{
+    position: fixed;
+    bottom: 1.25vh;
+    right: 7vh;
+}
+
+/*designing the link for my twitter profile*/
+#twt{
+    position: fixed;
+    bottom: 1.25vh;
+    right: 12vh;
+}
+
+/*designing the link for my facebook profile*/
+#fb{
+    position: fixed;
+    bottom: 1.25vh;    
+    right: 17vh;
+}
+
+/*setting up the copyright of my website*/
+#copyright p{
+    font-size: 1vw;
+    position: fixed;
+    bottom: 2vh;
+    left: 3vh;
+    font-weight: bold;
+    font-family: 'Lora', serif;
+}
+
+/*setting up the overall content box i will use for my home page, background page, and references page*/
+.contentbox{
+    background-color: #44318D;
+    width: 100%;
+    height: 93vh;
+}
+
+/*adjusting the size and fit of all the images I will use for my home page, background page, and references page*/
+.contentbox img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*setting up the header for all my webpages except the homepage*/
+h1{
+    font-size: 2vw;
+    font-family: 'Archivo Black', sans-serif;
+    color: #DAC4F6;
+    margin-bottom: 1vw;
+}
+
+/*setting up the div i used for the text portion of my home page*/
+.bannertext{
+    position: relative;
+    top: 12vh;
+    width: 45%;
+    height: 75vh;
+    padding: 3vw;
+}
+
+/*setting up the header of my home page*/
+.bannertext h1{
+    font-size: 3.5vw;
+    font-family: 'Archivo Black', sans-serif;
+    color: #DAC4F6;
+}
+
+/*setting up the description paragraph of my home page*/
+.bannertext p{
+    color: white;
+    margin-top: 3vh;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5vw;
+}
+
+/*setting up the button or link of my home page for the next page*/
+.bannertext a{
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+    background-color: #A4B3B6;
+    padding: 2vh;
+    font-family: 'Farro', sans-serif;
+    margin-top: 3vh;
+    font-weight: bold;
+    font-size: 1vw;
+    transition: .4s;
+}
+
+/*designing the hover effect of my redirecting button in my home page*/
+#bannerlink:hover{
+    transition: .4s;
+    font-size: 1.25vw;
+    padding: .75vh;
+}
+
+/*setting up the box i will use for my cover pic in my home page*/
+#coverimage {
+    width: 49.5vw;
+    height: 82vh;
+    position: absolute;
+    top: 11vh;
+    right: 0vh;
+}
+
+/*setting up the box i will use for the ched pic in my background page*/
+#chedimage {
+    position: relative;
+    top: 11vh;
+    width: 100%;
+    height: 10vh;
+}
+
+/*setting up the content box where i will put all my intro text in my background page*/
+.intro {
+    position: relative;
+    top: 11vh;
+    height: 67vh;
+    padding: 1.5vw 3vw 3vw 3vw;
+}
+
+/*setting up the font style, color, and size for my discussion text in background page*/
+.intro p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.25vw;
+    color: white;
+    margin-bottom: 2vw;
+    text-align: justify;
+}
+
+/*setting up the box i will use for the data set image in my background page*/
+#datasetimage {
+    float: right;
+    width: 22vw;
+    height: 23vh;
+    margin: 6vh;
+}
+
+/*designing the caption of my data set image in my background page*/
+#datasetimage p{
+    text-align: center;
+    margin-top: 0.5vw;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1vw;
+    font-style: italic;
+    color: white;
+}
+
+/*desiging the box for the image i will use in the left portion of my references page*/
+#imagedesign1{
+    width: 10%;
+    height: 82vh;
+    position: absolute;
+    top: 11vh;
+    left: 0vw;
+}
+
+/*desiging the box for the image i will use in the right portion of my references page*/
+#imagedesign2{
+    width: 10%;
+    height: 82vh;
+    position: absolute;
+    top: 11vh;
+    right: 0vw;
+}
+
+/*designing the content box i will use for my sources page*/
+.sources {
+    position: absolute;
+    top: 11vh;
+    left: 10vw;
+    width: 73.5vw;
+    height: 77vh;
+    padding: 1.5vw 3vw 3vw 3vw;
+}
+
+/*designing the text box i will use for the quote portion of my sources page*/
+#quote{
+    background-color: #DAC4F6;
+    border-radius: 5vh;
+    height: 1.25vw;
+    padding: 1vw;
+    margin: 0vw 0vh 3vh 0vh;
+}
+
+/*designing and adding the quote in my quote box*/
+#quote p{
+    text-align: center;
+    font-size: 1vw;
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    color: black;
+}
+
+/*designing the font style size, and color of my reference list*/
+.sources ol{
+    font-family: 'Montserrat', sans-serif;
+    font-size: .75vw;
+    color: white;
+}
+
+/*putting a bottom margin to each item on my reference list to see them clearly*/
+.sources li{
+    margin-bottom: 1vw;
+}
+
+/*setting the attached links to remove underline and make it color white*/
+.sources a, .sources p{
+    color: white;
+}
+
+.datamotherbox{
+    background-color: #44318D;
+    width: 100%;
+    height: 93vh;
+}
+
+/*setting the table of content portion in my data discussion page*/
+#tableofcontents {
+    position: fixed;
+    top: 11vh;
+    border: 0.25vh solid #2A1B3D;
+    background-color: #2A1B3D;
+    width: 14.5%;
+    height: 77.5vh;
+    padding: 2vh;
+}
+
+/*making a pseudo-class so that the links at my tables of content will become colored the moment it gets clicked*/
+#sections:active{
+    color: #8265A7;
+}
+
+/*setting the title of my table of content portion in my data discussion page*/
+#tableofcontents h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.25vw;
+    margin-top: 1vh;
+}
+
+/*setting the section links of my table of content portion in my data discussion page*/
+#sectionlinks a{
+    display: block;
+    margin: 3vh 2vh 2vh 2vh;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1vw;
+    color: white;
+    text-decoration: none;
+}
+
+/*grouping minor sections and highlighting their relation by removing spaces between them */
+#sectionlinks .students,  #sectionlinks .faculty, #sectionlinks .ratio{
+    margin: 0vh 0vh 1vh 4vw;
+}
+
+/*positioning the mother div i will use for the main content of my data page*/
+#datacontentbox {
+    position: absolute;
+    left: 20.5vw;
+    top: 11vh;
+    height: 82vh;
+    width: 79%;
+    padding: 0vw 0vw 0vw 0.5vw;
+    overflow-y: auto; /*to enable scrolling in my data page*/
+}
+
+/*setting the font family and size of the main content of my data page*/
+#datacontentbox p, #datacontentbox li{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1vw;
+}
+
+/*bolding some texts in my data page to highlight their importance*/
+#datacontentbox span{
+    font-weight: bold;
+}
+
+/*adjusting the proportions of the regions parent div to ensure no overlapping*/
+#regions{
+    margin: 3vh 0vh 5vh 0vh;
+    height: 41vw;
+}
+
+/*adjusting the size of my images and its corresponding borders*/
+.regionsImg{
+    height: 10vw;
+    width: 41vw;
+    border: 0.5vh solid #A4B3B6;
+    border-radius: 5%;
+}
+
+/*positioning the parent div for my discussion for the region variable*/
+#regionsDiscussion{
+    position: relative;
+    bottom: 32vw;
+    left: 44vw;
+    height: auto;
+    width: 30vw;
+}
+
+/*designing my first discussion box for the region variable (bg color and alignment)*/
+#regionsdiscussionbox1{
+    background-color: #DAC4F6;
+    border-radius: 5vh;
+    padding: 2vw;
+    text-align: center;
+    margin-bottom: 2vh;
+}
+
+/*designing my second discussion box for the region variable (bg color and alignment)*/
+#regionsdiscussionbox2{
+    background-color: #DAC4F6;
+    border-radius: 5vh;
+    padding: 2vw;
+}
+
+/*justifying the text inside my second discussion box for regions to provide emphasis for the following list of text*/
+#regionsdiscussionbox2 p{
+    text-align: justify;
+    margin-bottom: 1vh;
+}
+
+/*adjusting the proportions of the type of schools parent div to ensure no overlapping*/
+#typeofschool{
+    margin: 3vh 0vh 5vh 0vh;
+    height: 41vw;
+}
+
+/*adjusting the size of my images for the pie charts of the type of schools in my data page and its corresponding borders*/
+.typeofschoolImg{
+    height: 19vw;
+    width: 21vw;
+    border: 0.5vh solid #A4B3B6;
+    border-radius: 5%;
+    margin: 2vw 0vw 0vw 2vw;
+}
+
+/*positioning and designing my first discussion box for the type of school variable*/
+#typeofschooldiscussionbox1{
+    position: relative;
+    top: 3vh;
+    left: 2vw;
+    background-color: #DAC4F6;
+    border-radius: 5vh;
+    padding: 2vw;
+    text-align: center;
+    margin-bottom: 4vh;
+    width: 30vw;
+}
+
+/*positioning and designing my second discussion box for the type of school variable*/
+#typeofschooldiscussionbox2{
+    position: relative;
+    left: 38vw;
+    bottom: 12vw;
+    background-color: #DAC4F6;
+    border-radius: 5vh;
+    padding: 2vw;
+    width: 29vw;
+}
+
+/*positioning the parent div where i will put my histogram images and discussion (applied for two variables: students and faculty)*/
+.histogram{
+    margin: 3vh 0vh 5vh 0vh;
+    height: 41vw;
+}
+
+/*adjusting the size of my histogram images and their borders (applied to 2 variables: students and faculty)*/
+.histogramImg{
+    height: 10vw;
+    width: 41vw;
+    border: 0.5vh solid #A4B3B6;
+    border-radius: 5%;
+}
+
+/*positioning the parent div for my two discussion boxes of my histograms and adjusting the alignmednt of the texts inside it(applied to 2 variables: students and faculty)*/
+.histogramDiscussionBox{
+    position: relative;
+    left: 44vw;
+    bottom: 31vw;
+    height: auto;
+    width: 30vw;
+    text-align: center;
+}
+
+/*designing the first discussion box for histograms (applied to 2 variables: students and faculty)*/
+.histogramDiscussion1{
+    background-color: #DAC4F6;
+    border-radius: 5vh;
+    padding: 2vw;
+    margin-bottom: 4vh;
+}
+
+/*designing the second discussion box for histograms (applied to 2 variables: students and faculty)*/
+.histogramDiscussion2{
+    background-color: #DAC4F6;
+    border-radius: 5vh;
+    padding: 2vw;
+}
+
+/*positioning the parent div where i will put the descriptive summaries images and discussion (applied to 2 variables: students and faculty*/
+.descriptives{
+    margin: 3vh 0vh 5vh 0vh;
+    height: 41vw;
+}
+
+/*adjusting the size of the images of the descriptive summaries and their borders (applied to 2 variables: students and faculty)*/
+.decriptivesImg{
+    height: 24vw;
+    width: 21vw;
+    border: 0.5vh solid #A4B3B6;
+    border-radius: 5%;
+    margin: 0.5vw 0vw 0vw 2vw;
+}
+
+/*positioning the discussion div of the descriptives and adjusting the alignment of the texts inside it (applied to 2 variables: students and faculty)*/
+.decriptivesDiscussion{
+    position: relative;
+    top: 2vh;
+    left: 3vw;
+    background-color: #DAC4F6;
+    border-radius: 5vh;
+    padding: 1vw;
+    text-align: center;
+    margin-bottom: 4vh;
+    width: 65vw;
+}
+
+/*positioning the parent div where i will put my box plot images and discussion (applied for three variables: students, faculty, and ratio)*/
+.boxplots{
+    margin: 3vh 0vh 5vh 0vh;
+    height: 38vw;
+}
+
+/*adjusting the size of my box plots and their borders (applied for three variables: students, faculty, and ratio)*/
+.boxplotsImg{
+    height: 29vw;
+    width: 12vw;
+    border: 0.5vh solid #A4B3B6;
+    border-radius: 5%;
+    margin: 0.5vw 0vw 0vw 0.5vw;
+}
+
+/*positioning the div for my discussion of my box plots and adjusting the alignment of the texts inside it( applied to 3 variables: students, faculty, and ratio)*/
+.boxplotsDiscussion{
+    position: relative;
+    bottom: 30vw;
+    left: 43vw;
+    background-color: #DAC4F6;
+    border-radius: 5vh;
+    padding: 1vw;
+    text-align: center;
+    margin-bottom: 10vh;
+    width: 27vw;
+}
+
+/*positioning the parent div of all the elements involved in the interpreataion of the ratio*/
+#ratiointerpret{
+    margin: 3vh 0vh 5vh 0vh;
+    width: 72vw;
+    height: 54vw;
+}
+
+/*setting the alignment of the div used for the images used for ratio interpretation to center*/
+#ratiointerpretImg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*adjusting the sizes of the images used for the ratio interpretation and setting their border and border color*/
+.ratiointerpretImg{
+    height: 10vw;
+    border: 0.5vh solid #A4B3B6;
+    border-radius: 5%;
+    margin: 0.5vw 0vw 0vw 0.5vw;
+}
+
+/*putting a bottom margin for discussion texts to separate paragraphs from each other*/
+.boxplotsDiscussion p, #ratiointerpret p {
+    margin-bottom: 1vh;
+}
+
+/*positioning the parent div of all the elements involved in the conclusion part of my data page*/
+#conclusion{
+    margin: 3vh 0vh 5vh 0vh;
+    width: 72vw;
+    height: 53vw;
+}
+
+/*setting the appropriate font size, color, and family of the texts in my conclusion*/
+#conclusion p{
+    font-size: 1.25vw;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
+    margin-bottom: 2.5vh;
+    text-indent: 5vw;
+}
+
+/*positioning the parent div of all the elements involved in the the content part of my about me page*/
+.AboutMemotherdiv{
+    background-color: #44318D;
+    width: 100%;
+    height: 93vh;
+}
+
+/*positioning and adjusting the size of the div used for the profile section of the aboutme page (the dark blue box at the left portion)*/
+#myprofile{
+    position: fixed;
+    top: 11vh;
+    background-color: #2A1B3D;
+    width: 23%;
+    height: 78vh;
+    padding: 2vh;
+}
+
+/*positioning the parent div of all the elements involved in the profile section of the about me page*/
+#myprofilecontent{
+    height: 70vh;
+    padding:1vw;
+}
+
+/*adjusting the size of my photo and positioning it at the center of the profile section*/
+#myphoto{
+    border-radius: 50%;
+    width: 18vw;
+    position: relative;
+    left: 1.5vw;
+    top: 2vh;
+}
+
+/*making my name larger by setting Archivo Black as the font-family and making the font-size larger*/
+#name {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 2vw;
+    position: relative;
+    top: 7vh;
+    left: 1.5vw;
+    color:#DAC4F6;
+}
+
+/*setting the font-size, font-family, and color of my signiture and positioning it at the bottom of my name*/
+#signature{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5vw;
+    font-style: italic;
+    position: relative;
+    top: 8vh;
+    left: 3vw;
+    color:#DAC4F6;
+}
+
+/*making a divider between my name and signuture and my additional facts*/
+#whiteline{
+    border: 0.25vh solid white;
+    position: relative;
+    top: 11vh;
+}
+
+/*positioning the div that contains the text for my additional details*/
+#briefdescription{
+    position: relative;
+    top: 14vh;
+}
+
+/*setting the font size, family, and color of the text of my additional details*/
+#briefdescription p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.25vw;
+    color: white;
+}
+
+/*positioning the div that contains all the details at he right portion of the about me page*/
+#factsaboutme {
+    position: absolute;
+    left: 28vw;
+    top: 11vh;
+    height: 78vh;
+    width: 67%;
+    padding: 0vw 0vw 0vw 0.5vw;
+}
+
+/*setting the font details of the text inside the div factsaboutme*/
+#factsaboutme p, #factsaboutme li{
+    font-size: 1.15vw;
+    color: white;
+    margin: 2vh 0vh 2vh 0vh;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*positioning the parent div of the elements of each grouped details/list*/
+.factscontentbox{
+    height: auto;
+    padding: 1vh;
+    margin-top: 2vh;
+}
+
+/*setting the height and the margin of all the headers in the about me page*/
+.aboutmeheaders{
+    border: 0.25vh solid #8265A7;
+    background-color: #8265A7;
+    padding: 0.5vw;
+    font-size: 1vw;
+    color: white;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+/*setting the position, width, and height of the members box*/
+#members{
+    float: right;
+    width: 22vw;
+    height: 10vw;
+}
+
+/*setting the width and height of the school background box/list*/
+#schoolbackground{
+    width: 40vw;
+}
+
+/*setting the position, width, and height of the box that contains my other details*/
+#otherdetails{
+    float: right;
+    width: 33vw;
+}
+
+/*setting the width and height of the box that contains the list of my hobbies*/
+#hobbies{
+    width: 30vw;
+}

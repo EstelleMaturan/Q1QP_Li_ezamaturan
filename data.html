@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Higher Education in Luzon - Data Analysis</title>
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!--coding the box meant for design at the top of the screen-->
+    <div id="marginbox"></div>
+    
+    <!--coding the navigation bar-->
+    <div id="navbar">
+        <div id="brand">
+            <!--coding the image for the logo-->
+            <div id="brandlogo">
+                <img src="images/logo.png" alt="">
+            </div>
+            <!--coding the brand name for my website-->
+            <div id="brandname">
+                <p>ched stat</p>
+            </div>
+        </div>
+        <!--coding the links for the different pages in my website-->
+        <div id="linksgroup">
+            <div class="links" id="home">
+                <a href="index.html">Home</a>
+            </div>
+            <div class="links" id="background">
+                <a href="background.html">Background</a>
+            </div>
+            <div class="links" id="data">
+                <a href="data.html">Data</a>
+            </div>
+            <div class="links" id="references">
+                <a href="references.html">References</a>
+            </div>
+            <div class="links" id="aboutme">
+                <a href="aboutme.html">About Me</a>
+            </div>
+            <div class="links" id="contribute">
+                <a id="contributereaction" href="#">Contribute to Us</a>
+            </div>
+        </div>
+
+        <!--coding the footer along with the social media links and the copyright-->
+        <div id="footer">
+            <!--the copyright-->
+            <div id="copyright">
+                <p>Star Brands by Estelle Zoe Athena. All rights reserved. 2023</p>
+            </div>
+            <!--the social media links: github, instagram, facebook, and twitter-->
+            <div id="socials">
+                <a class="socials" id="github" href="https://github.com/EstelleMaturan">
+                    <img src="images/socials/github.png" alt="github">
+                </a>
+                <a class="socials" id="ig" href="https://www.instagram.com/es_telleme2ran/">
+                    <img src="images/socials/insta.png" alt="ig">
+                </a>
+                <a class="socials" id="twt" href="https://twitter.com/es_telleme2ran">
+                    <img src="images/socials/twt.png" alt="twt">
+                </a>
+                <a class="socials" id="fb" href="https://www.facebook.com/estelle.maturan">
+                    <img src="images/socials/fb.png" alt="fb">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!--my main parent div of the main contents of my data page-->
+    <div class="datamotherbox">
+        <!--the table of contents (section guide) at the left portion-->
+        <div id="tableofcontents">
+            <!--the header for my table of contents-->
+            <h1>Variables</h1>
+            <!--the subheading or the guides in my tables of content and where the user will click for redirects-->
+            <div id="sectionlinks">
+                <a id="sections" href="#regions">I. Regions</a>
+                <a id="sections" href="#typeofschool">II. Type of School</a>
+                <a id="sections" href="#studenthistogram">III. No. of Students</a>
+                <a id="sections" class="students" href="#studenthistogram">A. Histograms</a>
+                <a id="sections" class="students" href="#studentdecriptives">B. Descriptives</a>
+                <a id="sections" class="students" href="#studentboxplots">C. Box Plots</a>
+                <a id="sections" href="#facultyhistogram">IV. No. of Faculty</a>
+                <a id="sections" class="faculty" href="#facultyhistogram">A. Histograms</a>
+                <a id="sections" class="faculty" href="#facultydecriptives">B. Descriptives</a>
+                <a id="sections" class="faculty" href="#facultyboxplots">C. Box Plots</a>
+                <a id="sections" href="#ratioboxplots">III. Faculty-student Ratio</a>
+                <a id="sections" class="ratio" href="#ratioboxplots">A. Box Plots</a>
+                <a id="sections" class="ratio" href="#ratiointerpret">B. Interpretation</a>
+                <a id="sections" href="#conclusion">IV. Conclusion</a>
+            </div>
+        </div>
+
+        <!--the actual content-->
+        <div id="datacontentbox">
+            <!--data analysis for the qualitative variable: regions-->
+            <div id="regions">
+                <h1>Qualitative Data - Regions: Bar Graphs</h1>
+                <!--images of the bar graphs of the regions in Luzon-->
+                <div>
+                    <img class="regionsImg" src="images/regions/regions_BarGraph1.png" alt="Count of Schools Per Region in S.Y. 2016-2017" title="Count of Schools Per Region in S.Y. 2016-2017">
+                    <img class="regionsImg" src="images/regions/regions_BarGraph2.png" alt="Count of Schools Per Region in S.Y. 2017-2018" title="Count of Schools Per Region in S.Y. 2017-2018">
+                    <img class="regionsImg" src="images/regions/regions_BarGraph3.png" alt="Count of Schools Per Region in S.Y. 2018-2019" title="Count of Schools Per Region in S.Y. 2018-2019">
+                </div>
+                <!--the div in which i will put my two discussion boxes-->
+                <div id="regionsDiscussion">
+                    <!--the two discussion boxes where i will put my text/explanations for the bar graphs of regions-->
+                    <div id="regionsdiscussionbox1">
+                        <p>
+                            Notably, the National Capital 
+                            Region has the highest number of universities for three consecutive 
+                            school years. On the other hand, the Cordillera Administrative Region 
+                            emerges as the region with the lowest number of universities.For three consecutive school years, the regions 
+                            when arranged in ascending order according to 
+                            the number of universities are in this order: <span>Cordillera 
+                            Administrative Region, MIMAROPA, Cagayan Valley, Ilocos Region, 
+                            Bicol Region, Central Luzon, CALABARZON, National Capital Region.</span>
+                        </p>
+                    </div>
+                    <div id="regionsdiscussionbox2">
+                        <p>Possible factors why there are more universities 
+                            in the NCR compared to the CAR:
+                        </p>
+                        <ul>
+                            <li>Population</li>
+                            <li>Government Funding</li>
+                            <li>Legacy</li>
+                            <li>Infrastructure and Transportation</li>
+                            <li>Resources</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!--data analysis for the qualitative variable: type of school-->
+            <div id="typeofschool">
+                <h1>Qualitative Data - Type of School: Pie Charts</h1>
+                
+                <!--images of the pie charts of the regions in Luzon for three school years-->
+                <div>
+                    <img class="typeofschoolImg" src="images/typeofschool/typeofschool_PieChart1.png" alt="Count of Public and Private Schools in S.Y. 2016-2017" title="Count of Public and Private Schools in S.Y. 2016-2017">
+                    <img class="typeofschoolImg" src="images/typeofschool/typeofschool_PieChart2.png" alt="Count of Public and Private Schools in S.Y. 2017-2018" title="Count of Public and Private Schools in S.Y. 2017-2018">
+                    <img class="typeofschoolImg" src="images/typeofschool/typeofschool_PieChart3.png" alt="Count of Public and Private Schools in S.Y. 2018-2019" title="Count of Public and Private Schools in S.Y. 2018-2019">
+                </div>
+
+                <!--the first of the two discussion boxes where i will put my text/explanations for the pie charts of the colleges in Luzon-->
+                <div id="typeofschooldiscussionbox1">
+                    <p>
+                        The graphical representation of university distribution 
+                        in Luzon is notable with the majority being private. 
+                        Out of the total number of universities surveyed, 
+                        95% of them belong to the private sector. On the 
+                        other hand, the public sector, represented by SUCs, 
+                        accounts for a mere 5% of the total, consisting of 
+                        only 57 universities for three consecutive years.
+                    </p>
+                </div>
+                
+                <!--the second of the two discussion boxes where i will put my text/explanations for the pie charts of the colleges in Luzon-->
+                <div id="typeofschooldiscussionbox2">
+                    <p>
+                        We can infer that the possible 
+                        cause of the dominance of private colleges in Luzon 
+                        is the difference in the source of funding. Private 
+                        schools, as privately owned institutions, operate 
+                        independently of government funding. In contrast, 
+                        public schools rely on budget allocations provided 
+                        by the government, leading to limited resources.
+                    </p>
+                </div>
+            </div>
+
+            <!--data analysis for the quantitative variable: no. of students-->
+            <div id="studenthistogram" class="histogram">
+                
+                <!--data analysis for the histograms of the no. of students in Luzon in the thre school years-->
+                <h1>Quantitative Data - No. of Students: Histogram</h1>
+                
+                <!--images of the histograms of the no. of students in Luzon in the thre school years-->
+                <div>
+                    <img class="histogramImg" src="images/students/studentsHistogram1.png" alt="Histogram of the Number of Students in Luzon in S.Y. 2016-2017" title="Histogram of the Number of Students in Luzon in S.Y. 2016-2017">
+                    <img class="histogramImg" src="images/students/studentsHistogram2.png" alt="Histogram of the Number of Students in Luzon in S.Y. 2017-2018" title="Histogram of the Number of Students in Luzon in S.Y. 2017-2018">
+                    <img class="histogramImg" src="images/students/studentsHistogram3.png" alt="Histogram of the Number of Students in Luzon in S.Y. 2018-2019" title="Histogram of the Number of Students in Luzon in S.Y. 2018-2019">
+                </div>
+                
+                <!--the div in which i will put my two discussion boxes for the histograms of the no. of students-->
+                <div class="histogramDiscussionBox">
+                    <!--the first discussion box for the histograms of the no. of students-->
+                    <div class="histogramDiscussion1">
+                        <p>
+                            As shown in the three histograms for the number 
+                            of students in three school years, the shape of 
+                            the distributions is extremely skewed to the 
+                            right or positively skewed. All three are 
+                            single-peaked and have wide gaps and outliers.
+                        </p>
+                    </div>
+                    <!--the second discussion box for the histograms of the no. of students-->
+                    <div class="histogramDiscussion2">
+                        <p>
+                            We can interpret from the histogram that 
+                            in the S.Y. 2016-2017, the majority of all 
+                            the universities in Luzon have a student population 
+                            within the range 1-2001. While the two next school 
+                            years have schools with student bodies within range 
+                            1-1740 and 2-1764, respectively. While most student 
+                            populations lie within the mentioned ranges in specific 
+                            school years, there are still some considerable outliers
+                            in the data. For example, the sole college who had a student 
+                            population within the range of 64033 to 66033 in S.Y. 
+                            2016-2017 is an extreme outlier.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!--data analysis for the descriptive summaries of the no. of students in Luzon in the three school years-->
+            <div id="studentdecriptives" class="descriptives">
+                <h1>Quantitative Data - No. of Students: Descriptives</h1>
+                
+                <!--images of the descriptive summaries of the no. of students in Luzon in the three school years-->
+                <div>
+                    <img class="decriptivesImg" src="images/students/studentsDescriptives1.png" alt="Descriptive Summaries of the Number of Students in Luzon in S.Y. 2016-2017" title="Descriptive Summaries of the Number of Students in Luzon in S.Y. 2016-2017">
+                    <img class="decriptivesImg" src="images/students/studentsDescriptives2.png" alt="Descriptive Summaries of the Number of Students in Luzon in S.Y. 2017-2018" title="Descriptive Summaries of the Number of Students in Luzon in S.Y. 2017-2018">
+                    <img class="decriptivesImg" src="images/students/studentsDescriptives3.png" alt="Descriptive Summaries of the Number of Students in Luzon in S.Y. 2018-2019" title="Descriptive Summaries of the Number of Students in Luzon in S.Y. 2018-2019">
+                </div>
+                
+                <!--the discussion/explanation box for the descriptive summaries of the no. of students-->
+                <div class="decriptivesDiscussion">
+                    <p>
+                        Based on the median, we can interpret from this that the average 
+                        number of students that attend a college school in Luzon has 
+                        been 407 in the S.Y. 2016-2017, 360 students in S.Y. 2017-2018, 
+                        and 358 students in S.Y. 2018-2019. The IQRs in the three school 
+                        years (1120.75, 1000, and 941, respectively) are considerably 
+                        low, which suggests there is a consistent small difference 
+                        between the schools in the upper portion and the lower portion 
+                        of the clustered data set for successive years.
+                    </p>
+                </div>
+            </div>
+
+            <!--data analysis for the box plots of the no. of students in Luzon in the three school years-->
+            <div id="studentboxplots" class="boxplots">
+                <h1>Quantitative Data - No. of Students: Box Plots</h1>
+                
+                <!--images of the box plots of the no. of students in Luzon in the three school years-->
+                <div>
+                    <img class="boxplotsImg" src="images/students/studentsBoxPlots1.png" alt="Box Plot of the Number of Students in S.Y. 2016-2017" title="Box Plot of the Number of Students in S.Y. 2016-2017">
+                    <img class="boxplotsImg" src="images/students/studentsBoxPlots2.png" alt="Box Plot of the Number of Students in S.Y. 2017-2018" title="Box Plot of the Number of Students in S.Y. 2017-2018">
+                    <img class="boxplotsImg" src="images/students/studentsBoxPlots3.png" alt="Box Plot of the Number of Students in S.Y. 2018-2019" title="Box Plot of the Number of Students in S.Y. 2018-2019">
+                </div>
+                
+                <!--the div of the discussion/explanation box for the box plots of the no. of students-->
+                <div class="boxplotsDiscussion">
+                    <p> <!--first paragraph-->
+                        Noticeably, the number of students has been decreasing year by year from 
+                        these parameters. More graduates or drop-outs than enrollees can be a plausible 
+                        explanation for this decline. On a general scale, this decline of student populations 
+                        may imply poor administration of some colleges, ineffective leadership, and personnel 
+                        issues, all of which are detrimental environments to a budding student.
+                    </p>
+
+                    <p> <!--second paragraph-->
+                        In the S.Y. 2016-2017, all college schools had at least 1 number of students 
+                        and at most 66011, if outliers are included. In this school year, 50 percent of all 
+                        the colleges in Luzon had a student population within the range of 130 to 1251 
+                        students. Furthermore, if outliers are considered, in S.Y. 2017 to 2018, all 
+                        colleges had at least 1 student and up to 57403 overall. 50 percent of all the 
+                        colleges in Luzon had a student body between 133 and 1133 during this academic year. 
+                        As of the S.Y. 2018-2019, all colleges in Luzon had at least 2 students and, if 
+                        outliers are taken into account, a maximum of 58167 students. During this academic 
+                        year, 50% of all the colleges in Luzon had 111 to 1052 students enrolled. 
+                    </p>
+                </div>
+            </div>
+            
+            <!--data analysis for the quantitative variable: no. of faculty in Luzon-->
+            <div id="facultyhistogram" class="histogram">
+                
+                <!--data analysis for the histograms of the no. of faculty in Luzon in the three school years-->
+                <h1>Quantitative Data - No. of Faculty: Histogram</h1>
+                
+                <!--images of the histograms of the no. of faculty in Luzon in the thre school years-->
+                <div>
+                    <img class="histogramImg" src="images/faculty/facultyHistogram1.png" alt="Histogram of the Number of Faculty in Luzon in S.Y. 2016-2017" title="Histogram of the Number of Faculty in Luzon in S.Y. 2016-2017">
+                    <img class="histogramImg" src="images/faculty/facultyHistogram2.png" alt="Histogram of the Number of Faculty in Luzon in S.Y. 2017-2018" title="Histogram of the Number of Faculty in Luzon in S.Y. 2017-2018">
+                    <img class="histogramImg" src="images/faculty/facultyHistogram3.png" alt="Histogram of the Number of Faculty in Luzon in S.Y. 2018-2019" title="Histogram of the Number of Faculty in Luzon in S.Y. 2018-2019">
+                </div>
+                
+                <!--the div in which i will put my two discussion boxes for the histograms of the no. of faculty-->
+                <div class="histogramDiscussionBox">
+                    <!--the first discussion box for the histograms of the no. of faculty-->
+                    <div class="histogramDiscussion1">
+                        <p>
+                            The shape of distributions of the data set of the number of 
+                            faculty in the three specified school years are extremely skewed 
+                            to the right or positively skewed, as shown in the histograms. 
+                            All three are single-peaked and have wide gaps and outliers.
+                        </p>
+                    </div>
+                    <!--the second discussion box for the histograms of the no. of faculty-->
+                    <div class="histogramDiscussion2">
+                        <P>
+                            We can interpret that in S.Y. 2016-2017, S.Y. 2017-2018, and S.Y. 
+                            2018-2019, the majority of all the examined universities in Luzon 
+                            have a faculty population within the range 1-115. While most faculty 
+                            populations lie within the ranges in specific school years, there are 
+                            still some considerable outliers in the data.   
+                        </P>
+                    </div>
+                </div>
+            </div>
+
+             <!--data analysis for the descriptive summaries of the no. of faculty in Luzon in the three school years-->
+            <div id="facultydecriptives" class="descriptives">
+                <h1>Quantitative Data - No. of Faculty: Descriptives</h1>
+                
+                <!--images of the descriptive summaries of the no. of faculty in Luzon in the three school years-->
+                <div>
+                    <img class="decriptivesImg" src="images/faculty/facultyDescriptives1.png" alt="Descriptive Summaries of the Number of Faculty in Luzon in S.Y. 2016-2017" title="Descriptive Summaries of the Number of Faculty in Luzon in S.Y. 2016-2017">
+                    <img class="decriptivesImg" src="images/faculty/facultyDescriptives2.png" alt="Descriptive Summaries of the Number of Faculty in Luzon in S.Y. 2017-2018" title="Descriptive Summaries of the Number of Faculty in Luzon in S.Y. 2017-2018">
+                    <img class="decriptivesImg" src="images/faculty/facultyDescriptives3.png" alt="Descriptive Summaries of the Number of Faculty in Luzon in S.Y. 2018-2019" title="Descriptive Summaries of the Number of Faculty in Luzon in S.Y. 2018-2019">
+                </div>
+                
+                <!--the discussion/explanation box for the descriptive summaries of the no. of faculty-->
+                <div class="decriptivesDiscussion">
+                    <p>
+                        The mean of the number of faculty in S.Y. 2016-2017, S.Y. 2017-2018, and S.Y.
+                        2018-2019 are 78.34, 74.95, and 74.39, respectively. The standard deviation of the number
+                        of faculty in S.Y. 2016-2017, S.Y. 2017-2018, and S.Y. 2018-2019 are 193.66, 191.20, and
+                        192.45, respectively. However, since the distribution of the number of faculty in all three
+                        school years are extremely positively skewed, the appropriate measure of center and
+                        variability to be used are the median, IQR, and the five-number summary.
+                    </p>
+                </div>
+            </div>
+            
+            <!--data analysis for the box plots of the no. of faculty in Luzon in the three school years-->
+            <div id="facultyboxplots" class="boxplots">
+                <h1>Quantitative Data - No. of Faculty: Box Plots</h1>
+                
+                <!--images of the box plots of the no. of faculty in Luzon in the three school years-->
+                <div>
+                    <img class="boxplotsImg" src="images/faculty/facultyBoxPlots1.png" alt="Box Plot of the Number of Faculty in S.Y. 2016-2017" title="Box Plot of the Number of Faculty in S.Y. 2016-2017">
+                    <img class="boxplotsImg" src="images/faculty/facultyBoxPlots2.png" alt="Box Plot of the Number of Faculty in S.Y. 2017-2018" title="Box Plot of the Number of Faculty in S.Y. 2017-2018">
+                    <img class="boxplotsImg" src="images/faculty/facultyBoxPlots3.png" alt="Box Plot of the Number of Faculty in S.Y. 2018-2019" title="Box Plot of the Number of Faculty in S.Y. 2018-2019">
+                </div>
+                
+                <!--the div of the discussion/explanation box for the box plots of the no. of faculty-->
+                <div class="boxplotsDiscussion">
+                    <p> <!--first paragraph-->
+                        The medians of the number of faculty in S.Y. 2016-2017, S.Y. 2017-2018, 
+                        and S.Y. 2018-2019 are 28, 27, and 26, respectively. Furthermore, the 
+                        IQRs in the three school years (42, 39, and 37, respectively) are 
+                        considerably low in relative to the values in the data set, which suggests 
+                        there is a small difference between the faculty population in the schools 
+                        in the upper portion and the lower portion of the clustered data set. Based 
+                        on the descriptive summaries, it can be noted that the S.Y. of 2017-2018 had 
+                        the most skewed distribution among the three data sets.
+                    </p>
+
+                    <p> <!--second paragraph-->
+                        Noticeably, the parameters of the number of faculty also declined, like the 
+                        number of students, when we examine the median and percentiles. The decrease in 
+                        the average personnel per college in Luzon can imply employment issues. It may 
+                        be possible that there were more employees retiring or resigning from their jobs 
+                        than newcomers. The inflation in goods and the implemented increase of the minimum 
+                        wage can also be factors for establishments to fire their people and lessen their staff. 
+                    </p>
+                </div>
+            </div>
+
+            <!--data analysis for the last quantitative variable: faculty-to-student ratio through box plots-->
+            <div id="ratioboxplots" class="boxplots">
+                <h1>Quantitative Data - Faculty-Student Ratio: Box Plots</h1>
+                
+                <!--images of the box plots of the faculty-to-student ratio in Luzon in the three school years-->
+                <div>
+                    <img class="boxplotsImg" src="images/ratio/ratioBoxPlots1.png" alt="Box Plot of the Faculty-to-Student Ratio in Luzon in S.Y. 2016-2017" title="Box Plot of the Faculty-to-Student Ratio in Luzon in S.Y. 2016-2017">
+                    <img class="boxplotsImg" src="images/ratio/ratioBoxPlots2.png" alt="Box Plot of the Faculty-to-Student Ratio in Luzon in S.Y. 2017-2018" title="Box Plot of the Faculty-to-Student Ratio in Luzon in S.Y. 2017-2018">
+                    <img class="boxplotsImg" src="images/ratio/ratioBoxPlots3.png" alt="Box Plot of the Faculty-to-Student Ratio in Luzon in S.Y. 2018-2019" title="Box Plot of the Faculty-to-Student Ratio in Luzon in S.Y. 2018-2019">
+                </div>
+
+                <!--the div of the discussion/explanation box for the box plots of the faculty-to-student ratio-->
+                <div class="boxplotsDiscussion">
+                    <p> <!--first paragraph-->
+                        The mean of the faculty-student ratio in S.Y. 2016-2017, 
+                        S.Y. 2017-2018, and S.Y. 2018-2019 are 0.126, 0.128, and 0.143, 
+                        respectively. The standard deviation of the faculty-student ratio 
+                        in S.Y. 2016-2017, S.Y. 2017-2018, and S.Y. 2018-2019 are 0.169, 
+                        0.158, and 0.189, respectively. However, since the distribution of 
+                        the faculty-student ratio in all three school years are positively 
+                        skewed, the appropriate measure of center and variability to be used 
+                        are the median, interquartile range (IQR), and the five-number 
+                        summary (Min, Q1, Md, Q3, Max).
+                    </p>
+
+                    <p> <!--second paragraph-->
+                        The IQRs in the three school years (0.101, 0.095, and 0.122, respectively) 
+                        are considerably low in relative to the values in the data set, which 
+                        suggests there is a small difference between the faculty population 
+                        in the schools in the upper portion and the lower portion of the clustered 
+                        data set. Based on the descriptive summaries, it can be noted that the S.Y. 
+                        of 2017-2018 had the most skewed distribution among the three data sets.
+                    </p>
+                </div>
+            </div>
+
+            <!--interpreting the values we got from the box plot-->
+            <div id="ratiointerpret">
+                <h1>Quantitative Data - Faculty-Student Ratio: Interpretation</h1>
+                
+                <!--the images that will serve as the basis for our interpretation-->
+                <div id="ratiointerpretImg">
+                    <img class="ratiointerpretImg" src="images/ratio/ratioInterpret1.png" alt="The medians of Luzon colleges for three consecutive school years" title="The Medians of Luzon Colleges for Three Consecutive School Years">
+                    <img class="ratiointerpretImg" src="images/ratio/ratioInterpret2.png" alt="Table of Values for the Interpretation of the Faculty-to-Student Ratio" title="Table of Values for the Interpretation of the Faculty-to-Student Ratio">
+                </div>
+
+                <!--the div of the discussion/explanation box where we will put all of our words for our ratio interpretation-->
+                <div class="decriptivesDiscussion">
+                    <p> <!--first paragraph-->
+                        Considering that the ideal faculty-student ratio is 1:25 
+                        (0.04 in decimal form), according to a DepEd Executive Order 
+                        (No. 349), these parameters roughly indicate an improving 
+                        faculty-to-student ratio in relation to the standard one. 
+                        The higher the faculty-student ratio of a college is to 0.04, 
+                        the more satisfactory it is, as it means that there is a 
+                        faculty-student ratio of less than 1:25. The lesser the 
+                        faculty-student ratio of a college is to 0.04, the more 
+                        unsatisfactory it is, as it means that there is a faculty-student 
+                        ratio of more than 1:25. This means that 1 faculty staff may have 
+                        handled at least 26 students at a time, which is not ideal. 
+                    </p>
+
+                    <p> <!--second paragraph-->
+                        To further analyze our data set, the median shall be used to 
+                        encapsulate the whole population of Luzon state and private colleges, 
+                        and through determining whether the median of the ratios increase or 
+                        decrease in relation to 0.04—which is the standard—we can conclude 
+                        whether the faculty-student ratio of the state and private colleges 
+                        of Luzon gets better or worse every year. In the three school years,
+                        the medians are 0.067, 0.077, and 0.071, respectively. Within these 
+                        three school years, it can be concluded that more than half of the 
+                        colleges in Luzon had a satisfactory faculty-student ratio as the medians 
+                        of the three school years are 0.027, 0.037, and 0.031 above the standard 
+                        ratio of 0.04, respectively.
+                    </p>
+
+                    <p> <!--third paragraph-->
+                        Furthermore, to see a thorough and clear display whether there 
+                        really is an association between the changes of the number of 
+                        students and faculty to the changes in the faculty-to-student 
+                        ratio during the three school years, let's study the decrease 
+                        rates of the students and faculty based on their medians. From 
+                        S.Y. 2016-2017 to S.Y. 2017-2018, the decrease rate of the students 
+                        was 13.1% while the decrease rate of the faculty was only 3.5%. 
+                        This means that the student population in Luzon decreased faster 
+                        than the faculty. This calculation is aligned with the increase of 
+                        the ratio from 0.67 of S.Y. 2016-2017 to 0.77 of S.Y. 2017-2018, 
+                        indicating that more colleges had better ratios in the second year. 
+                    </p>
+
+                    <p> <!--fourth paragraph-->
+                        However, the median of the ratios decreased in the following 
+                        year, from S.Y. 2017-2018’s 0.77 to 0.71 of S.Y. 2018-2019. 
+                        This may indicate that there were a few colleges who had a 
+                        faculty-student ratio which did not improve or became unfavorable. 
+                        This decrease was evident in our data set since students only had a 
+                        decrease rate of 0.55% compared to the 3.8% decrease of the faculty 
+                        in S.Y. 2017-2018 to S.Y. 2018-2019. At that time, Luzon was losing 
+                        more school personnel than students. So, it was reasonable for the 
+                        faculty-to-student ratio to deteriorate. Nonetheless, the 
+                        general population of the state and private colleges of Luzon had a 
+                        relatively satisfactory ratio within the three school years.
+                    </p>
+                </div>
+            </div>
+            
+            <!--the conclusion section of our web page in which we will summarize all of our points-->
+            <div id="conclusion">
+                <h1>Conclusion</h1>
+                
+                <p> <!--first paragraph-->
+                    Compared to other parts of Luzon, the National Capital Region 
+                    has the highest education institutions, likely as a result of its 
+                    substantial population, advanced infrastructure, and extensive 
+                    intellectual resources. The Cordillera Administrative Region, on 
+                    the other side, has the fewest colleges. Furthermore, private 
+                    universities make up over 95% of all higher education institutions 
+                    in Luzon. In general, higher education in Luzon is in good standing 
+                    and is progressing positively in terms of the faculty-to-student ratio. 
+                    The majority of all the schools in Luzon by S.Y. 2018-2019 already have 
+                    a satisfactory faculty-to-student ratio, which often indicates more 
+                    individual attention on each student, further promoting their growth 
+                    and development. However, colleges in Luzon have faced a decline in the 
+                    aspects of student and faculty body for the past three school years. 
+                    These declines really show poor development because naturally we should 
+                    expect more students at schools due to our increasing population. 
+                    Furthermore, if we want to cope with our ideal growing student population, 
+                    then more people should be given job opportunities and be employed to cater 
+                    to the rising demands of students.
+                </p>
+
+                <p> <!--second paragraph-->
+                    Considering that CHED (Commission on Higher Education) collects their 
+                    data through their “Annual Higher Education Data/Information Collection” 
+                    survey, some schools were unable to give their complete data regarding 
+                    their student and faculty population. For instance, in the S.Y. 2017-2018, 
+                    out of 1098 of S.Y. 2017-2018 colleges, only 624 colleges were able to 
+                    provide a complete data of their student population. Moreover, only 1076 
+                    colleges were able to provide complete data of their faculty population, 
+                    and only 1046 colleges were able to provide complete data of their 
+                    faculty/student ratio. Although the effect of these nonresponse biases to 
+                    our data sets are mild to none, we cannot counter the fact that these 
+                    missing links may serve to benefit to the parameters we are examining.
+                </p>
+
+                <p> <!--third paragraph-->
+                    As long as our nation continue to develop and advance its assets, 
+                    our education system, especially in higher levels, should always be 
+                    given great consideration and attention for our schools are the place 
+                    where our students learn how to further develop their skills, become 
+                    individuals they aspire to be, and become citizens of our country 
+                    who selflessly devote one’s capabilities in service to our nation. 
+                    Constant and consistent monitoring of the current state and condition 
+                    of our country’s current metropolitan center, which is Luzon, can 
+                    greatly aid our government in making informed decisions that would 
+                    hopefully improve our education system. With these parameters, it 
+                    can also serve as a basis or prompts for future research—finding out 
+                    more plausible causes for the decrease of the number of students and 
+                    faculty within these three school years. Furthermore, there are many 
+                    factors other than location and class size to consider when we examine 
+                    higher education. Influences such as economic, cultural, and social factors 
+                    and teaching methods are highly encouraged to be studied in future research.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!--linking the external css to this html -->
+    <link rel="stylesheet" href="css/style.css">
+</body>
+</html>
