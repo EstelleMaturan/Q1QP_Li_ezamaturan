@@ -189,7 +189,7 @@
 }
 
 /*setting up the header for all my webpages except the homepage*/
-h1{
+h2{
     font-size: 2vw;
     font-family: 'Archivo Black', sans-serif;
     color: #DAC4F6;
@@ -259,7 +259,7 @@ h1{
 }
 
 /*setting up the content box where i will put all my intro text in my background page*/
-.intro {
+#intro {
     position: relative;
     top: 11vh;
     height: 67vh;
@@ -267,7 +267,7 @@ h1{
 }
 
 /*setting up the font style, color, and size for my discussion text in background page*/
-.intro p{
+.intro{
     font-family: 'Montserrat', sans-serif;
     font-size: 1.25vw;
     color: white;
@@ -284,7 +284,7 @@ h1{
 }
 
 /*designing the caption of my data set image in my background page*/
-#datasetimage p{
+#caption {
     text-align: center;
     margin-top: 0.5vw;
     font-family: 'Open Sans', sans-serif;
@@ -293,21 +293,21 @@ h1{
     color: white;
 }
 
-/*desiging the box for the image i will use in the left portion of my references page*/
-#imagedesign1{
+/*positioning the boxes for the images i will use as designs in my references page*/
+.sourcesImgdesign {
     width: 10%;
     height: 82vh;
     position: absolute;
     top: 11vh;
+}
+
+/*putting the 1st image at the leftmost portion of the page*/
+#imagedesign1{
     left: 0vw;
 }
 
-/*desiging the box for the image i will use in the right portion of my references page*/
+/*putting the 2nd image at the rightmost portion of the page*/
 #imagedesign2{
-    width: 10%;
-    height: 82vh;
-    position: absolute;
-    top: 11vh;
     right: 0vw;
 }
 
@@ -327,7 +327,7 @@ h1{
     border-radius: 5vh;
     height: 1.25vw;
     padding: 1vw;
-    margin: 0vw 0vh 3vh 0vh;
+    margin: 0vw 0vh 2vh 0vh;
 }
 
 /*designing and adding the quote in my quote box*/
@@ -341,7 +341,7 @@ h1{
 }
 
 /*designing the font style size, and color of my reference list*/
-.sources ol{
+.sources ol, .sources a{
     font-family: 'Montserrat', sans-serif;
     font-size: .75vw;
     color: white;
@@ -352,11 +352,7 @@ h1{
     margin-bottom: 1vw;
 }
 
-/*setting the attached links to remove underline and make it color white*/
-.sources a, .sources p{
-    color: white;
-}
-
+/*the parent div of my data page where i will put all my content (table of contents and data analysis)*/
 .datamotherbox{
     background-color: #44318D;
     width: 100%;
@@ -380,12 +376,13 @@ h1{
 }
 
 /*setting the title of my table of content portion in my data discussion page*/
-#tableofcontents h1{
+#tableofcontents h3{
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     text-align: center;
     font-size: 1.25vw;
     margin-top: 1vh;
+    color: #DAC4F6;
 }
 
 /*setting the section links of my table of content portion in my data discussion page*/
@@ -414,6 +411,12 @@ h1{
     overflow-y: auto; /*to enable scrolling in my data page*/
 }
 
+/*setting the border and border color for all of the images i will use in my data page*/
+#datacontentbox img{
+    border: 0.5vh solid #A4B3B6;
+    border-radius: 5%;
+}
+
 /*setting the font family and size of the main content of my data page*/
 #datacontentbox p, #datacontentbox li{
     font-family: 'Montserrat', sans-serif;
@@ -436,12 +439,10 @@ h1{
     height: 65vw;
 }
 
-/*adjusting the size of my images and its corresponding borders*/
+/*adjusting the size of my bar graphs for regions*/
 .regionsImg{
     height: 15vw;
     width: 41vw;
-    border: 0.5vh solid #A4B3B6;
-    border-radius: 5%;
     margin-top: 2vw;
 }
 
@@ -482,12 +483,10 @@ h1{
     height: 48vw;
 }
 
-/*adjusting the size of my images for the pie charts of the type of schools in my data page and its corresponding borders*/
+/*adjusting the size of my images for the pie charts of the type of schools in my data page*/
 .typeofschoolImg{
     height: 19vw;
     width: 21vw;
-    border: 0.5vh solid #A4B3B6;
-    border-radius: 5%;
     margin: 2vw 0vw 0vw 2vw;
 }
 
@@ -521,12 +520,10 @@ h1{
     height: 65vw;
 }
 
-/*adjusting the size of my histogram images and their borders (applied to 2 variables: students and faculty)*/
+/*adjusting the size of my histogram images (applied to 2 variables: students and faculty)*/
 .histogramImg{
     height: 15vw;
     width: 41vw;
-    border: 0.5vh solid #A4B3B6;
-    border-radius: 5%;
     margin-top: 2vw;
 }
 
@@ -561,12 +558,10 @@ h1{
     height: 59vw;
 }
 
-/*adjusting the size of the images of the descriptive summaries and their borders (applied to 2 variables: students and faculty)*/
+/*adjusting the size of the images of the descriptive summaries (applied to 2 variables: students and faculty)*/
 .decriptivesImg{
     height: 35vw;
     width: 22vw;
-    border: 0.5vh solid #A4B3B6;
-    border-radius: 5%;
     margin: 0.5vw 0vw 0vw 1vw;
 }
 
@@ -589,12 +584,10 @@ h1{
     height: 63vw;
 }
 
-/*adjusting the size of my box plots and their borders (applied for three variables: students, faculty, and ratio)*/
+/*adjusting the size of my box plots (applied for three variables: students, faculty, and ratio)*/
 .boxplotsImg{
     height: 40vw;
     width: 12vw;
-    border: 0.5vh solid #A4B3B6;
-    border-radius: 5%;
     margin: 0.5vw 0vw 0vw 0.5vw;
     position: relative;
     top: 9vh;
@@ -626,11 +619,9 @@ h1{
     justify-content: center;
 }
 
-/*adjusting the sizes of the images used for the ratio interpretation and setting their border and border color*/
+/*adjusting the sizes of the images used for the ratio interpretation*/
 .ratiointerpretImg{
     height: 15vw;
-    border: 0.5vh solid #A4B3B6;
-    border-radius: 5%;
     margin: 0.5vw 0vw 0vw 0.5vw;
 }
 
